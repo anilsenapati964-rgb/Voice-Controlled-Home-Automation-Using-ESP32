@@ -1,0 +1,169 @@
+# Voice-Controlled Home Automation System Using ESP32 and Google Assistant
+
+## Abstract
+
+This project presents a Voice-Controlled Home Automation System using ESP32, Google Assistant, and Sinric Pro. The system enables users to control connected devices using voice commands. Google Assistant processes voice commands and communicates with Sinric Pro Cloud, which forwards the commands to the ESP32 through a Wi-Fi network. In this implementation, three LEDs (Red, Green, and Blue) are used to represent smart appliances. The system demonstrates real-time wireless control and provides a low-cost solution for smart home automation.
+
+---
+
+## Introduction
+
+Voice-controlled systems have become an important component of modern smart homes. With the advancement of Internet of Things (IoT) technology, users can interact with devices using natural language commands through voice assistants.
+
+This project demonstrates a voice-controlled home automation system using ESP32 and Google Assistant. Sinric Pro acts as the cloud platform that connects Google Assistant with the ESP32. Voice commands are used to control multiple devices represented by LEDs.
+
+---
+
+## Objectives
+
+* To develop a voice-controlled home automation system.
+* To integrate ESP32 with Google Assistant.
+* To implement cloud-based communication using Sinric Pro.
+* To control multiple devices through voice commands.
+* To demonstrate IoT-based smart home automation.
+
+---
+
+## Components Used
+
+| Sl. No. | Component               | Quantity    |
+| ------- | ----------------------- | ----------- |
+| 1       | ESP32 Development Board | 1           |
+| 2       | Red LED                 | 1           |
+| 3       | Green LED               | 1           |
+| 4       | Blue LED                | 1           |
+| 5       | 220Ω Resistors          | 3           |
+| 6       | Breadboard              | 1           |
+| 7       | Jumper Wires            | As Required |
+| 8       | Wi-Fi Network           | 1           |
+| 9       | Google Assistant        | 1           |
+| 10      | Sinric Pro Platform     | 1           |
+
+---
+
+## System Architecture
+
+User Voice Command
+
+↓
+
+Google Assistant
+
+↓
+
+Sinric Pro Cloud
+
+↓
+
+Wi-Fi Network
+
+↓
+
+ESP32
+
+↓
+
+Red LED / Green LED / Blue LED
+
+---
+
+## Circuit Diagram
+
+The hardware circuit consists of an ESP32 connected to three LEDs through GPIO pins. The LEDs are connected through current-limiting resistors. GPIO4 controls the Red LED, GPIO15 controls the Green LED, and GPIO2 controls the Blue LED.
+
+*Insert Circuit Diagram Here*
+
+---
+
+## Methodology
+
+The ESP32 is connected to a Wi-Fi network and authenticated using Sinric Pro credentials. Three virtual devices are configured on the Sinric Pro dashboard. Google Assistant is linked with Sinric Pro to enable voice control.
+
+When a voice command is issued, Google Assistant sends the command to Sinric Pro Cloud. Sinric Pro forwards the command to the ESP32, which controls the corresponding GPIO pin and changes the state of the associated LED.
+
+---
+
+## Working Principle
+
+1. ESP32 connects to the Wi-Fi network.
+2. Sinric Pro authenticates the ESP32 device.
+3. Google Assistant receives a voice command.
+4. The command is transmitted to Sinric Pro Cloud.
+5. Sinric Pro forwards the command to ESP32.
+6. ESP32 controls the corresponding GPIO output.
+7. The selected LED turns ON or OFF.
+
+---
+
+## Pin Configuration
+
+| Device    | GPIO Pin |
+| --------- | -------- |
+| Red LED   | GPIO4    |
+| Green LED | GPIO15   |
+| Blue LED  | GPIO2    |
+
+---
+
+## Results
+
+The developed system successfully established communication between Google Assistant, Sinric Pro Cloud, and the ESP32 development board. Voice commands were processed accurately and executed in real time.
+
+The Red, Green, and Blue LEDs responded correctly to voice commands issued through Google Assistant. The system demonstrated reliable operation with minimal delay, confirming the effectiveness of cloud-based voice-controlled automation.
+
+---
+
+## Advantages
+
+* Hands-free operation.
+* Easy integration with Google Assistant.
+* Wireless communication using Wi-Fi.
+* Real-time device control.
+* Scalable architecture.
+* Low-cost implementation.
+
+---
+
+## Applications
+
+* Smart Home Automation
+* Smart Lighting Systems
+* Voice-Controlled Devices
+* Smart Offices
+* Assistive Technology
+* IoT-Based Automation
+
+---
+
+## Future Scope
+
+* Integration of relay modules for controlling AC appliances.
+* Mobile application support.
+* Energy monitoring and analytics.
+* AI-based automation and scheduling.
+* Cloud data logging and monitoring.
+* Multi-room smart home implementation.
+
+---
+
+## Conclusion
+
+This project successfully demonstrates a Voice-Controlled Home Automation System using ESP32, Google Assistant, and Sinric Pro. The system enables users to control devices through voice commands over Wi-Fi. The implementation is reliable, cost-effective, and suitable for modern smart home applications. The project also provides a foundation for future developments involving intelligent automation and smart device integration.
+
+---
+
+## Project Demonstration Video
+
+Project Demo:
+
+https://drive.google.com/file/d/1QVRz4gogtG4Z4sCtLEmQrsCyxuU_RzDf/view?usp=drive_link
+
+---
+
+## References
+
+1. ESP32 Technical Documentation
+2. Sinric Pro Documentation
+3. Google Assistant Documentation
+4. Arduino IDE Documentation
+5. Internet of Things (IoT) Fundamentals
