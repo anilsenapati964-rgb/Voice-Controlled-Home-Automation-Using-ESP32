@@ -1,5 +1,3 @@
-# Voice-Controlled-Home-Automation-Using-ESP32
-Voice-controlled smart home automation system using ESP32, relay modules, and Google Assistant for remote appliance control.
 # Voice-Controlled Home Automation System Using ESP32
 
 ## Overview
@@ -38,15 +36,15 @@ In this implementation, three LEDs (Red, Green, and Blue) are used to represent 
 ## System Architecture
 
 User Voice Command
-↓
+->
 Google Assistant
-↓
+->
 Sinric Pro Cloud
-↓
+->
 Wi-Fi Network
-↓
+->
 ESP32
-↓
+->
 Red LED / Green LED / Blue LED
 
 ---
