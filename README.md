@@ -1,4 +1,5 @@
 # Voice-Controlled Home Automation System Using ESP32 and Google Assistant
+![Project Demo](Demo Video/demo_gif.gif)
 
 ## Overview
 
