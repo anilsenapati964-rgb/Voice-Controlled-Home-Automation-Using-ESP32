@@ -53,6 +53,9 @@ Red LED / Green LED / Blue LED
 ## Circuit Diagram
 
 Circuit diagram is available in the `Circuit_Diagram` folder.
+## 🔌 Circuit Design & Simulation
+
+[![Open in Cirkit Designer](https://img.shields.io/badge/Open%20in-Cirkit%20Designer-blue?style=for-the-badge)](https://app.cirkitdesigner.com/project/2cec41bb-1c39-4b16-9860-44c97c1b7325)
 
 ---
 
